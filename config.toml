@@ -1,0 +1,29 @@
+baseurl = "http://bhberson.github.io/steak-n-egger/"
+languageCode = "en-us"
+title = "Steak N Egger"
+googleanalytics = ""
+copyright = "© 2016 Steak N Egger. All Rights Reserved"
+disableRSS = true
+
+[params]
+  description = "Steak N Egger, a family owned breakfast, lunch, and dinner restaurant and eatery focused on energetic atmosphere and engaging service."
+  keywords = "american restaurant,breakfast restaurant,restaurant,breakfast,muskegon,watch muskegon, steak and egger, steak n egger"
+  facebook = "SteakandEgger"
+  fbpageID = "567889869937615"
+  twitter = ""
+  instagram = ""
+  email = "contact@steakneggermuskegon.com"
+  phone = "(231) 719-8939"
+  address1 = "1535 Holton Rd"
+  address2 = "Muskegon, Michigan 49445"
+  googlemaps = "https://goo.gl/maps/DnbcPgZQMgQ2"
+
+[[params.hours]]
+  days = "Monday-Wednesday"
+  hours = "7am-2pm"
+[[params.hours]]
+  days = "Thursday-Saturday"
+  hours = "7am-8pm"
+[[params.hours]]
+  days = "Sunday"
+  hours = "7am-2pm"
