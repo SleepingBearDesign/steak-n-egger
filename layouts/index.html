@@ -1,5 +1,118 @@
 {{ partial "header.html" . }}
 <body>
 {{ partial "navbar.html" . }}
+<!-- first section - Home -->
+<div id="home" class="home">
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="title-container">
+                <div class="headline">
+                    <img src="video/logo.png" height="160" alt="">
+                </div>
+            </div>
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="video/mp4/Egg-Shop.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="video/webm/Egg-Shop.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster hidden">
+                <img src="video/snapshot/Egg-Shop.jpg" alt="">
+            </div>
+            <div style="position: absolute; bottom: 50px; left: 50%; margin-left: -19px; z-index: 200;">
+                <a class="coverr-nav-item smoothScroll" href="#about">
+                    <h1>
+                        <i class="fa fa-angle-down"></i>
+                    </h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /first section -->
+
+<!-- second section - About -->
+<div id="before-about" class="pad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>We're excited to serve you the best, local dinning experience.<br>
+* Fresh twists on America's favorite classics * <br>
+Open 7 days a week<br>
+This background would not look like this, but one fluid image of the pattern</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="after-about" class="pad-section">
+  <div class="container text-vcenter">
+    <div class="row">
+      <div class="col-sm-12">
+          <h1>good neighbors</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /second section -->
+
+<!-- third section - Social -->
+<div id="before-social" class="pad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Wake up your potential everyday!</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="social" class="pad-section">
+  <div class="container">
+    <h2 class="text-center">Social Media Section</h2> <hr />
+    <div class="row text-center">
+      <div class="col-sm-4 col-xs-12">
+        <i class="fa fa-facebook"> </i>
+        <h4>Facebook Feed</h4>
+        <p>This would be latest facebook posts or events.</p>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <i class="fa fa-twitter"> </i>
+        <h4>Twitter</h4>
+        <p>Latest Tweets from Steak N Egger or about Steak N Egger. (ie. specific hashtags or mentions)</p>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <i class="fa fa-instagram"> </i>
+        <h4>Instagram</h4>
+        <p>This could be the latest photo from Steak N Egger on Instagram or last couple</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="after-social" class="pad-section">
+  <div class="container text-vcenter">
+    <div class="row">
+      <div class="col-sm-12">
+          <h1>good food</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /third section -->
+
+
+<!-- fourth section - Map -->
+<div id="before-map" class="pad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Come see us today!</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- google map -->
+<div id="google_map"></div>
+<!-- /google map -->
+
+<!-- /fourth section -->
 
 {{ partial "footer.html" . }}
