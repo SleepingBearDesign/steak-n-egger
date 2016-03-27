@@ -1,0 +1,225 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fe0000;
+}
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #cd3238;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.navbar-default {
+  background-color: #67b6d2;
+  border-color: #519bbd;
+}
+.navbar-default .navbar-brand {
+  color: #304758;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #6e8595;
+}
+.navbar-default .navbar-text {
+  color: #304758;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #304758;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #6e8595;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #6e8595;
+  background-color: #519bbd;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #6e8595;
+  background-color: #519bbd;
+}
+.navbar-default .navbar-toggle {
+  border-color: #519bbd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #519bbd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #304758;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #304758;
+}
+.navbar-default .navbar-link {
+  color: #304758;
+}
+.navbar-default .navbar-link:hover {
+  color: #6e8595;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #304758;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #6e8595;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #6e8595;
+    background-color: #519bbd;
+  }
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+.video-container .filter {
+    z-index: 100;
+    bottom: 0%;
+    left: 0%;
+    position: absolute;
+    background-color: rgba(142, 180, 168, 0.6);
+    width: 100%;
+    height: 100%;
+}
+.video-container video {
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+.video-container video::-webkit-media-controls {
+    display:none !important;
+}
+.video-container .title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.coverr-nav-item {
+    z-index: 200;
+    text-align: center;
+}
+
+
+#before-about, #before-social, #before-map {
+  background: url(../img/tile.jpg) repeat center center; 
+  position: relative;
+}
+#after-about {
+  background: url(../img/pancake.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#social {
+  background-color: #fff;
+  position: relative;
+}
+#social .fa {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#after-social {
+  background: url(../img/breakfast.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#google_map {
+  height: 500px;
+}
+
+footer {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
