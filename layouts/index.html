@@ -111,7 +111,21 @@ This background would not look like this, but one fluid image of the pattern</h4
 </div>
 
 <!-- google map -->
-<div id="google_map"></div>
+<div id="map-wrap">
+    <div id="google_map"></div>
+    <div class="place-card">
+        <div class="left-side">
+            <h2>{{ .Site.Title }}</h2>
+            <p>{{ .Site.Params.address1 }},<br>{{ .Site.Params.address2 }}<br>{{ .Site.Params.phone }}</p>
+        </div>
+        <div class="right-side">
+            <a href="{{ .Site.Params.googlemaps }}" target="_blank">
+                <img src="img/google-maps-logo.png" alt="Google Maps">
+                <span>Directions</span>
+            </a>
+        </div>
+    </div>
+</div>
 <!-- /google map -->
 
 <!-- /fourth section -->
