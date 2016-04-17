@@ -163,6 +163,9 @@ a:hover, a:focus, a:active {
     text-align: center;
 }
 
+.copyright {
+  text-align: center;
+}
 
 #before-about, #before-social, #before-map {
   background: url(../img/tile.jpg) repeat center center; 
