@@ -63,7 +63,7 @@ function scaleBannerVideoSize(element){
  * Listen to scroll to change header opacity class
  */
 function checkScroll(){
-    var height = $(window).height() + 5;
+    var height = $(window).height() - 10;
     var unitHeight = parseInt(height) + 'px';
 
     if($(window).scrollTop() > height){

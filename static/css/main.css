@@ -34,6 +34,13 @@ a:hover, a:focus, a:active {
   padding: 0;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #fe0000;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active {
+    color: #cd3238;
+}
+
 .navbar {
    background-color: transparent;
    background: transparent;
