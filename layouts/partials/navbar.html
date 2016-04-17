@@ -14,10 +14,17 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse-main">
       <ul class="nav navbar-nav navbar-right">
+        {{ if .IsHome }}
         <li><a href="#home" class="smoothScroll">Home</a></li>
         <li><a href="#about" class="smoothScroll">About</a></li>
-        <li><a href="#services" class="smoothScroll">Menu</a></li>
+        <li><a href="menu">Menu</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ .Site.BaseURL }}#about">About</a></li>
+        <li><a href="{{ .Site.BaseURL }}menu">Menu</a></li>
+        <li><a href="{{ .Site.BaseURL }}#contact">Contact</a></li>
+        {{ end }}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

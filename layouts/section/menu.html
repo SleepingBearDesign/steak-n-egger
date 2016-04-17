@@ -1,0 +1,48 @@
+{{ partial "header.html" . }}
+<body id="menu">
+{{ partial "facebook-SDK.html" . }}
+{{ partial "navbar.html" . }}
+<!-- first section - Home -->
+<div class="header">
+  <div class="container text-vcenter">
+    <div class="row">
+      <div class="col-sm-12">
+          <h1>good food</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /first section -->
+
+<!-- second section - About -->
+<div id="before-about" class="pad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Nommy Food<br>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="about" class="pad-section">
+  <div class="container">
+    <h2 class="text-center">Our Menu</h2> <hr />
+    <div class="row text-center">
+    {{ range where .Data.Pages "Section" "menu"  }}
+        {{ .Render "li"}}
+    {{ end }}
+    </div>
+  </div>
+</div>
+<div id="after-about" class="pad-section">
+  <div class="container text-vcenter">
+    <div class="row">
+      <div class="col-sm-12">
+          <h1>good neighbors</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /second section -->
+
+{{ partial "footer.html" . }}
