@@ -1,37 +1,4 @@
 $(document).ready(function (){
-
-  // create a LatLng object containing the coordinate for the center of the map
-  var latlng = new google.maps.LatLng(-33.86455, 151.209);
-
-  // prepare the map properties
-  var options = {
-    zoom: 15,
-    center: latlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    navigationControl: true,
-    mapTypeControl: false,
-    scrollwheel: false,
-    disableDoubleClickZoom: true
-  };
-
-  // initialize the map object
-  var map = new google.maps.Map(document.getElementById('google_map'), options);
-
-  // add Marker
-  var marker1 = new google.maps.Marker({
-    position: latlng, map: map
-  });
-
-  // add listener for a click on the pin
-  google.maps.event.addListener(marker1, 'click', function() {
-    infowindow.open(map, marker1);
-  });
-
-  // add information window
-  var infowindow = new google.maps.InfoWindow({
-    content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
-  });
-
   scaleVideoContainer();
 
   initBannerVideoSize('.video-container .poster img');
@@ -90,4 +57,59 @@ function scaleBannerVideoSize(element){
         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
     });
+}
+
+function initMap() {
+   // create a LatLng object containing the coordinate for the center of the map
+  var latlng = new google.maps.LatLng(43.28087, -86.230107);
+
+  // style the map
+  var customMapType = new google.maps.StyledMapType([
+        {
+          stylers: [
+            {hue: '#67b6d2'},
+            {weight: 0.5}
+          ]
+        },
+        {
+          elementType: 'labels',
+          stylers: [{visibility: 'on'}]
+        }
+      ], {
+        name: 'Custom Style'
+    });
+    var customMapTypeId = 'custom_style';
+
+  // prepare the map properties
+  var options = {
+    zoom: 15,
+    center: latlng,
+    mapTypeControlOptions: {
+        mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+      },
+    navigationControl: true,
+    mapTypeControl: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: true
+  };
+
+  // initialize the map object
+  var map = new google.maps.Map(document.getElementById('google_map'), options);
+
+  // add Marker
+  var marker1 = new google.maps.Marker({
+    position: latlng, map: map, icon: 'http://sleepingbeardesign.github.io/steak-n-egger/img/marker-google.png',
+  });
+
+  // add listener for a click on the pin
+  google.maps.event.addListener(marker1, 'click', function() {
+    infowindow.open(map, marker1);
+  });
+
+  // add information window
+  var infowindow = new google.maps.InfoWindow({
+    content:  '<div class="info"><strong>Steak \'N Egger</strong><br><br>1535 Holton Rd,<br>Muskegon, MI 49445<br><a target="_blank" href="https://goo.gl/maps/roXSyogoZVq">Directions</a></div>'
+  });
+  map.mapTypes.set(customMapTypeId, customMapType);
+  map.setMapTypeId(customMapTypeId);
 }
