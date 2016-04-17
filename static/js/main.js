@@ -98,7 +98,7 @@ function initMap() {
 
   // add Marker
   var marker1 = new google.maps.Marker({
-    position: latlng, map: map
+    position: latlng, map: map, icon: 'http://sleepingbeardesign.github.io/steak-n-egger/img/marker-google.png',
   });
 
   // add listener for a click on the pin
