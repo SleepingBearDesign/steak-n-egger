@@ -4,6 +4,7 @@
 {{ partial "navbar.html" . }}
 <!-- first section - Home -->
 <div id="home" class="home">
+
     <div class="homepage-hero-module">
         <div class="video-container">
             <div class="title-container">
@@ -39,8 +40,20 @@
         <h4>We're excited to serve you the best, local dinning experience.<br>
 * Fresh twists on America's favorite classics * <br>
 Open 7 days a week<br>
-This background would not look like this, but one fluid image of the pattern</h4>
       </div>
+    </div>
+  </div>
+</div>
+<div id="about" class="pad-section">
+  <div class="container">
+    <h2 class="text-center">Our Story</h2> <hr />
+    <div class="row text-center">
+    <p>Started in Muskegon in 1871, made great breakfast! Family owned restaurant serving breakfast, lunch, and dinner all day.<br>Bacon ipsum dolor amet tenderloin meatball beef ribs, doner landjaeger andouille brisket capicola. Brisket bacon shankle flank, prosciutto turducken filet mignon pork chop ground round hamburger beef ribs chicken strip steak ball tip kielbasa. Tail turkey kielbasa capicola landjaeger chuck t-bone leberkas short loin pork chop sirloin beef. T-bone pork belly boudin bacon cow jerky shank andouille turducken prosciutto strip steak beef kevin ham hock landjaeger. Swine tail spare ribs ball tip, pork short ribs turducken salami tongue shank meatball tri-tip. Sirloin bresaola bacon jerky. Prosciutto doner corned beef biltong pork chop salami pork loin t-bone brisket chuck turducken tongue landjaeger shoulder jowl.</p>
+    <div class="col-sm-6 col-sm-offset-3">
+    <a href="http://watchmuskegon.com/" target="_blank">
+       <img src="img/watch-muskegon-logo.png" class="img-responsive watch-mkg" alt="WATCH mUSkeGOn">
+   </a>
+   </div>
     </div>
   </div>
 </div>
@@ -67,20 +80,26 @@ This background would not look like this, but one fluid image of the pattern</h4
 </div>
 <div id="social" class="pad-section">
   <div class="container">
-    <h2 class="text-center">Social Media Section</h2> <hr />
+    <h2 class="text-center">Connect With Us!</h2> <hr />
     <div class="row text-center">
       <div class="col-lg-4 col-md-6 col-xs-12">
-        <i class="fa fa-facebook"> </i>
+        <div class="row">
+            <i class="fa fa-facebook"> </i>
+        </div>
         <div class="fb-page" data-href="https://www.facebook.com/SteakandEgger" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-height="600" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/SteakandEgger"><a href="https://www.facebook.com/SteakandEgger">Steak &#039;N Egger</a></blockquote></div></div>
       </div>
       <div class="col-lg-4 col-md-6 col-xs-12">
-        <i class="fa fa-twitter"> </i>
+        <div class="row">
+            <i class="fa fa-twitter"> </i>
+        </div>
         <a class="twitter-timeline" href="https://twitter.com/hashtag/breakfast" data-widget-id="721736303574786048">#breakfast Tweets</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
       <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-xs-12">
-        <i class="fa fa-instagram"> </i>
-        <h4>Instagram</h4>
+        <div class="row">
+            <i class="fa fa-instagram"> </i>
+            <h4><a href="http://instagram.com/{{.Site.Params.instagram}}" alt="Follow Us!">@Instagram</a></h4>
+        </div>
         <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/5ffacf5884f9516e814720187c0bd680.html" id="lightwidget_5ffacf5884" name="lightwidget_5ffacf5884"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 
       </div>

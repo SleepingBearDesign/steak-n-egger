@@ -59,6 +59,26 @@ function scaleBannerVideoSize(element){
     });
 }
 
+/**
+ * Listen to scroll to change header opacity class
+ */
+function checkScroll(){
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+
+    if($(window).scrollTop() > height){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
+
 function initMap() {
    // create a LatLng object containing the coordinate for the center of the map
   var latlng = new google.maps.LatLng(43.28087, -86.230107);
