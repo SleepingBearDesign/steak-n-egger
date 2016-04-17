@@ -168,7 +168,7 @@ a:hover, a:focus, a:active {
 }
 
 #before-about, #before-social, #before-map {
-  background: url(../img/tile.jpg) repeat center center; 
+  background: url(../img/tile.jpg) center; 
   position: relative;
 }
 #after-about {
