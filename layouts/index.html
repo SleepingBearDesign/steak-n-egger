@@ -145,6 +145,14 @@ Open 7 days a week<br>
     <div class="container">
         <h2 class="text-center">Contact Us!</h2> <hr />
         <div class="row text-center">
+            <h4>Hours</h4>
+            <p>
+              {{ range .Site.Params.hours }}
+                  {{ .days }}: {{ .hours }}<br>
+              {{ end }}
+            </p>
+        </div>
+        <div class="row text-center">
             {{ partial "contact.html" . }}
         </div>
     </div>
