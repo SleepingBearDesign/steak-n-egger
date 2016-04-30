@@ -35,6 +35,7 @@ a:hover, a:focus, a:active {
 }
 
 .navbar-default .navbar-nav > li > a {
+    font-weight: 500;
     color: #fe0000;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active {
@@ -119,6 +120,8 @@ a:hover, a:focus, a:active {
 .coverr-nav-item {
     z-index: 200;
     text-align: center;
+    -webkit-text-stroke: .5px black;
+    text-shadow: 1px 2px 0 #000;
 }
 
 .copyright {
@@ -145,7 +148,7 @@ a:hover, a:focus, a:active {
 }
 
 #after-about {
-  background: url(../img/pancake.jpg) no-repeat center center fixed; 
+  background: url(../img/breakfast-sandwhich.jpg) no-repeat center center fixed; 
   display: table;
   height: 500px;
   position: relative;
@@ -172,7 +175,7 @@ a:hover, a:focus, a:active {
 }
 
 #after-social {
-  background: url(../img/breakfast.jpg) no-repeat center center fixed; 
+  background: url(../img/goulash.jpg) no-repeat center center fixed; 
   display: table;
   height: 500px;
   position: relative;
