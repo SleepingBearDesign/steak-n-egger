@@ -3,7 +3,7 @@ $('#contact-form').submit(function(e){
   $.ajax({
     dataType: 'json',
     method: 'POST',
-    url: "//formspree.io/brody.berson@gmail.com",
+    url: "//formspree.io/steakneggermuskegon@yahoo.com",
     data: $('#contact-form').serialize(),
     beforeSend: function() {
       $('#contact-message').append("<div class='alert alert-warning alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong>Sending message...</strong></div>");
