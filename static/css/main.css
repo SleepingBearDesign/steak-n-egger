@@ -120,6 +120,8 @@ a:hover, a:focus, a:active {
 .coverr-nav-item {
     z-index: 200;
     text-align: center;
+    -webkit-text-stroke: .5px black;
+    text-shadow: 1px 2px 0 #000;
 }
 
 .copyright {
