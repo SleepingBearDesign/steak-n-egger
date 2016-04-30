@@ -145,7 +145,7 @@ a:hover, a:focus, a:active {
 }
 
 #after-about {
-  background: url(../img/pancake.jpg) no-repeat center center fixed; 
+  background: url(../img/breakfast-sandwhich.jpg) no-repeat center center fixed; 
   display: table;
   height: 500px;
   position: relative;
@@ -172,7 +172,7 @@ a:hover, a:focus, a:active {
 }
 
 #after-social {
-  background: url(../img/breakfast.jpg) no-repeat center center fixed; 
+  background: url(../img/goulash.jpg) no-repeat center center fixed; 
   display: table;
   height: 500px;
   position: relative;
