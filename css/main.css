@@ -86,7 +86,7 @@ a:hover, a:focus, a:active {
 }
 .video-container .poster img {
     width: 100%;
-    bottom: 0;
+    top: 0;
     position: fixed;
 }
 .video-container .filter {
@@ -134,16 +134,16 @@ a:hover, a:focus, a:active {
     margin-right: auto;
 }
 
-#before-about, #before-social, #before-map {
+#before-about, #before-social, #before-map, #before-menu {
   background: url(../img/tile.jpg) center; 
   position: relative;
 }
-#before-about, #before-social, #before-map, #after-about, #after-social, #menu .header  {
+#before-about, #before-social, #before-map, #before-menu, #after-menu, #after-about, #after-social, #menu .header  {
   color: #fff;
   text-shadow: 0px 2px 3px #555;
 }
 
-#before-about h4, #before-social h4, #before-map h4 {
+#before-about h4, #before-social h4, #before-map h4, #before-menu h4 {
   line-height: 1.5;
 }
 
@@ -175,6 +175,18 @@ a:hover, a:focus, a:active {
 }
 
 #after-social {
+  background: url(../img/sandwhich.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#after-menu {
   background: url(../img/goulash.jpg) no-repeat center center fixed; 
   display: table;
   height: 500px;
