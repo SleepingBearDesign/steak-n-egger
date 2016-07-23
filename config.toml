@@ -7,7 +7,7 @@ disableRSS = true
 
 [params]
   description = "Steak N Egger, a family owned breakfast, lunch, and dinner restaurant and eatery focused on energetic atmosphere and engaging service."
-  about = "Serving Muskegon since 1977, Steak 'N Egger continues to be a local favorite for breakfast and lunch alike. Under new ownership since December 2015 we look forward to continuing the rich tradition of the of the almost four decades of providing quality food and service. Our full menu is available anytime and includes a wide array of classic American comfort food. Our completely remodeled interior is both warm and welcoming for catching up with an old friend or stopping for a quick bite on your way through town."
+  about = "Serving Muskegon since 1977, Steak 'N Egger continues to be a local favorite for breakfast and lunch alike. Under new ownership since December 2015, we look forward to continuing the rich tradition of the almost four decades of providing quality food and service. Our full menu is available anytime and includes a wide array of classic American comfort food. Our completely remodeled interior is both warm and welcoming for catching up with an old friend or stopping for a quick bite on your way through town."
   keywords = "american restaurant,breakfast restaurant,restaurant,breakfast,muskegon,watch muskegon, steak and egger, steak n egger"
   facebook = "SteakandEgger"
   fbpageID = "567889869937615"
@@ -20,11 +20,8 @@ disableRSS = true
   googlemaps = "https://goo.gl/maps/DnbcPgZQMgQ2"
 
 [[params.hours]]
-  days = "Monday-Wednesday"
+  days = "Sunday-Thursday"
   hours = "7am-2pm"
 [[params.hours]]
-  days = "Thursday-Saturday"
-  hours = "7am-8pm"
-[[params.hours]]
-  days = "Sunday"
-  hours = "7am-2pm"
+  days = "Friday-Saturday"
+  hours = "7am-2pm & 4pm-8pm"
