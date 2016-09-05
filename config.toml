@@ -20,8 +20,8 @@ disableRSS = true
   googlemaps = "https://goo.gl/maps/DnbcPgZQMgQ2"
 
 [[params.hours]]
-  days = "Sunday-Thursday"
-  hours = "7am-2pm"
+  days = "Monday-Friday"
+  hours = "7am-3pm"
 [[params.hours]]
-  days = "Friday-Saturday"
-  hours = "7am-2pm & 4pm-8pm"
+  days = "Saturday & Sunday"
+  hours = "7am-2pm"
