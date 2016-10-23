@@ -1,5 +1,5 @@
 +++
 name = "Sausage"
-price = "2.00"
+price = "$2.00"
 description = "three links or two patties"
 +++
