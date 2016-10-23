@@ -1,5 +1,9 @@
 {{ partial "header.html" . }}
-<body>
+<body id="menu">
+{{ partial "facebook-SDK.html" . }}
 {{ partial "navbar.html" . }}
-
+{{ if .Params.page }}
+      {{ partial .Params.page . }}
+ {{ else }}
+ {{ end }}
 {{ partial "footer.html" . }}

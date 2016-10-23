@@ -1,5 +1,0 @@
-+++
-name = "French Toast or Pancakes or Bacon"
-price = "$4.69"
-description = "two pieces of each"
-+++
