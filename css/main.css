@@ -135,7 +135,7 @@ a:hover, a:focus, a:active {
 }
 
 #before-about, #before-social, #before-map, #before-menu {
-  background: url(../img/tile.jpg) center; 
+  background: url(../img/tile.jpg) center;
   position: relative;
 }
 #before-about, #before-social, #before-map, #before-menu, #after-menu, #after-about, #after-social, #menu .header  {
@@ -148,7 +148,7 @@ a:hover, a:focus, a:active {
 }
 
 #after-about {
-  background: url(../img/breakfast-sandwhich.jpg) no-repeat center center; 
+  background: url(../img/breakfast-sandwhich.jpg) no-repeat center center;
   display: table;
   height: 500px;
   position: relative;
@@ -177,7 +177,7 @@ a:hover, a:focus, a:active {
 }
 
 #after-social {
-  background: url(../img/sandwhich.jpg) no-repeat center center; 
+  background: url(../img/sandwhich.jpg) no-repeat center center;
   display: table;
   height: 500px;
   position: relative;
@@ -191,9 +191,9 @@ a:hover, a:focus, a:active {
 }
 
 #after-menu {
-  background: url(../img/goulash.jpg) no-repeat center center; 
+  background: url(../img/goulash.jpg) no-repeat center center;
   display: table;
-  height: 500px;
+  height: 300px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -201,7 +201,11 @@ a:hover, a:focus, a:active {
   -o-background-size: cover;
   background-size: cover;
   min-width: 100%;
-  min-height: 100%;
+}
+
+.menuContainer {
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 #menu .header {
@@ -219,6 +223,13 @@ a:hover, a:focus, a:active {
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+.menuTitle {
+    font-size: 48px;
+    text-transform: lowercase;
+    color: #5bc0de;
+    padding: 30px 0px 25px 0px;
 }
 
 #google_map {
