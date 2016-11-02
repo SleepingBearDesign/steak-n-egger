@@ -1,4 +1,9 @@
 <div class="row">
-  <p><strong>{{.name}}</strong><br>
-  {{.description | safeHTML}}</p>
+  <div class="pull-left">
+    <p><strong>{{.name}}</strong><br>
+    {{.description | safeHTML}}</p>
+  </div>
+  <div class="pull-right">
+    <p><strong>{{.price}}</strong></p>
+  </div>
 </div>
