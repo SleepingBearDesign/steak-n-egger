@@ -203,6 +203,11 @@ a:hover, a:focus, a:active {
   min-width: 100%;
 }
 
+.menuContainer {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
 #menu .header {
   background: url(../img/menu-header.jpg) no-repeat center center;
   -webkit-background-size: cover;

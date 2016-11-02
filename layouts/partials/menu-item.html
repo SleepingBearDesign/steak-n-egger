@@ -1,9 +1,13 @@
 <div class="row">
   <div class="pull-left">
-    <p><strong>{{.name}}</strong><br>
-    {{.description | safeHTML}}</p>
+    <p><strong>{{.name}}</strong>
   </div>
   <div class="pull-right">
     <p><strong>{{.price}}</strong></p>
+  </div>
+</div>
+<div class="row">
+  <div class="pull-left">
+    <p>{{.description | safeHTML}}</p>
   </div>
 </div>
