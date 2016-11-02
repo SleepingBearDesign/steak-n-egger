@@ -101,6 +101,17 @@
     {{ end }}
   </div>
 </div>
+<div class="container menuContainer col-md-8 col-md-offset-2">
+  <h2 class="menuTitle">Salads</h2> <hr />
+<div class="row col-lg-12 text-center">
+  <p>choice of dressing: Homemade 1000 Island, Ranch, Bleu Cheese, Red French, Honey Mustard, Italian, Fat-Free Raspberry Vinaigrette</p>
+</div>
+  <div class="row col-lg-12">
+    {{ range $.Site.Data.menu.lunchdinner.salads }}
+      {{ partial "menu-item.html" . }}
+    {{ end }}
+  </div>
+</div>
 <div id="after-menu" class="pad-section">
   <div class="container text-vcenter">
     <div class="row">
