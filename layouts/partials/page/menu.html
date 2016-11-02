@@ -1,34 +1,67 @@
 <div class="header">
-  <div class="container text-vcenter">
-    <div class="row">
-      <div class="col-sm-12">
-          <h1>good food</h1>
-      </div>
+    <div class="container text-vcenter">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>good food</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <!-- /first section -->
 
 <!-- second section - About -->
 <div id="before-about" class="pad-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h4><span class="hidden-xs">* </span>Quality Classic American Comfort Food<span class="hidden-xs"> *</span><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h4><span class="hidden-xs">* </span>Quality Classic American Comfort Food<span class="hidden-xs"> *</span><br>
       </div>
     </div>
   </div>
 </div>
-<div id="about" class="pad-section">
-  <div class="container">
-    <h2 class="text-center">Our Menu</h2> <hr />
-    <div class="row text-center">
+  <div class="container menuContainer col-md-6 col-md-offset-3">
+    <h2 class="menuTitle">Morning Faves</h2> <hr />
+    <div class="row col-lg-12">
+      {{ range $.Site.Data.menu.morningfaves }}
+        {{ partial "menu-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="container menuContainer col-md-6 col-md-offset-3">
+    <h2 class="menuTitle">Griddle Greats</h2> <hr />
+    <div class="row col-lg-12">
       {{ range $.Site.Data.menu.griddlegreats }}
         {{ partial "menu-item.html" . }}
       {{ end }}
     </div>
   </div>
-</div>
+  <div class="container menuContainer col-md-6 col-md-offset-3">
+    <h2 class="menuTitle">Lighter Fare</h2> <hr />
+    <div class="row col-lg-12">
+      {{ range $.Site.Data.menu.lighterfare }}
+        {{ partial "menu-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="container menuContainer col-md-6 col-md-offset-3">
+    <h2 class="menuTitle">Breakfast Extras</h2> <hr />
+    <div class="row col-lg-12">
+      {{ range $.Site.Data.menu.breakfastextras }}
+        {{ partial "menu-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="container menuContainer col-md-6 col-md-offset-3">
+    <h2 class="menuTitle">Omelettes</h2> <hr />
+    <div class="row col-lg-12 text-center">
+      <p>all our omelettes are made with four AA eggs and come with choice of wheat, white, sourdough, raisin, rye, Texas, or English muffin<br>omelettes can be made with cholesterol free egg substitutes or egg whites</p>
+    </div>
+    <div class="row col-lg-12">
+      {{ range $.Site.Data.menu.omelettes }}
+        {{ partial "menu-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
 <div id="after-menu" class="pad-section">
   <div class="container text-vcenter">
     <div class="row">
