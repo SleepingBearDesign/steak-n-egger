@@ -22,7 +22,7 @@
   <div class="container menuContainer col-md-8 col-md-offset-2">
     <h2 class="menuTitle">Morning Faves</h2> <hr />
     <div class="row col-lg-12">
-      {{ range $.Site.Data.menu.morningfaves }}
+      {{ range $.Site.Data.menu.breakfast.morningfaves }}
         {{ partial "menu-item.html" . }}
       {{ end }}
     </div>
@@ -30,7 +30,7 @@
   <div class="container menuContainer col-md-8 col-md-offset-2">
     <h2 class="menuTitle">Griddle Greats</h2> <hr />
     <div class="row col-lg-12">
-      {{ range $.Site.Data.menu.griddlegreats }}
+      {{ range $.Site.Data.menu.breakfast.griddlegreats }}
         {{ partial "menu-item.html" . }}
       {{ end }}
     </div>
@@ -38,15 +38,7 @@
   <div class="container menuContainer col-md-8 col-md-offset-2">
     <h2 class="menuTitle">Lighter Fare</h2> <hr />
     <div class="row col-lg-12">
-      {{ range $.Site.Data.menu.lighterfare }}
-        {{ partial "menu-item.html" . }}
-      {{ end }}
-    </div>
-  </div>
-  <div class="container menuContainer col-md-8 col-md-offset-2">
-    <h2 class="menuTitle">Breakfast Extras</h2> <hr />
-    <div class="row col-lg-12">
-      {{ range $.Site.Data.menu.breakfastextras }}
+      {{ range $.Site.Data.menu.breakfast.lighterfare }}
         {{ partial "menu-item.html" . }}
       {{ end }}
     </div>
@@ -57,7 +49,7 @@
       <p>all our omelettes are made with four AA eggs and come with choice of wheat, white, sourdough, raisin, rye, Texas, or English muffin<br>omelettes can be made with cholesterol free egg substitutes or egg whites</p>
     </div>
     <div class="row col-lg-12">
-      {{ range $.Site.Data.menu.omelettes }}
+      {{ range $.Site.Data.menu.breakfast.omelettes }}
         {{ partial "menu-item.html" . }}
       {{ end }}
     </div>
@@ -68,7 +60,15 @@
       <p>served with your choice of wheat, white, sourdough, raisin, rye, Texas, or English muffin, &amp; hash browns or American fries</p>
     </div>
     <div class="row col-lg-12">
-      {{ range $.Site.Data.menu.eggers }}
+      {{ range $.Site.Data.menu.breakfast.eggers }}
+        {{ partial "menu-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="container menuContainer col-md-8 col-md-offset-2">
+    <h2 class="menuTitle">Breakfast Extras</h2> <hr />
+    <div class="row col-lg-12">
+      {{ range $.Site.Data.menu.breakfast.breakfastextras }}
         {{ partial "menu-item.html" . }}
       {{ end }}
     </div>
