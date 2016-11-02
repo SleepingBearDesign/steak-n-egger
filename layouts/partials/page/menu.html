@@ -73,12 +73,6 @@
       {{ end }}
     </div>
   </div>
-  <div class="container menuContainer text-vcenter col-md-8 col-md-offset-2">
-    <h2 class="menuTitle">Lunch/Dinner Menu Coming Soon...</h2>
-    <div class="row col-lg-12 text-center">
-      <p>Until then, please view full PDF menu <a href="img/menu.pdf" target="_blank">here</a></p>
-    </div>
-  </div>
 <div id="after-menu" class="pad-section">
   <div class="container text-vcenter">
     <div class="row">
@@ -88,4 +82,23 @@
     </div>
   </div>
 </div>
-  <!-- /second section -->
+<div class="container menuContainer col-md-8 col-md-offset-2">
+  <h2 class="menuTitle">Entrées</h2> <hr />
+<div class="row col-lg-12 text-center">
+  <p>all entrées served with choice of two sides:<br>potato, applesauce, salad, coleslaw, vegetable, or cottage cheese</p>
+</div>
+  <div class="row col-lg-12">
+    {{ range $.Site.Data.menu.lunchdinner.entrees }}
+      {{ partial "menu-item.html" . }}
+    {{ end }}
+  </div>
+</div>
+<div id="after-menu" class="pad-section">
+  <div class="container text-vcenter">
+    <div class="row">
+      <div class="col-sm-12">
+          <h1>good friends</h1>
+      </div>
+    </div>
+  </div>
+</div>
