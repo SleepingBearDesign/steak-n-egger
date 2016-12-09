@@ -161,6 +161,14 @@
     {{ end }}
   </div>
 </div>
+<div class="container menuContainer col-md-8 col-md-offset-2">
+  <h2 class="menuTitle">Lunch Extras</h2> <hr />
+  <div class="row col-lg-12">
+    {{ range $.Site.Data.menu.lunchdinner.lunchextras }}
+      {{ partial "menu-item.html" . }}
+    {{ end }}
+  </div>
+</div>
 <div id="after-menu" class="pad-section">
   <div class="container text-vcenter">
     <div class="row">
