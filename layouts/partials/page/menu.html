@@ -169,6 +169,17 @@
     {{ end }}
   </div>
 </div>
+<div class="container menuContainer col-md-8 col-md-offset-2">
+  <h2 class="menuTitle">Senior Specials</h2> <hr />
+<div class="row col-lg-12 text-center">
+  <p>55 years or older<br>all meals are smaller portions and served with choice of two sides: potato, applesauce, salad, coleslaw, vegetable, or cottage cheese<br>beverages $1.49 with dinner</p>
+</div>
+  <div class="row col-lg-12">
+    {{ range $.Site.Data.menu.lunchdinner.seniorspecials }}
+      {{ partial "menu-item.html" . }}
+    {{ end }}
+  </div>
+</div>
 <div id="after-menu" class="pad-section">
   <div class="container text-vcenter">
     <div class="row">
