@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Steak 'N Egger"
 googleanalytics = ""
 copyright = "© 2016 Steak N Egger. All Rights Reserved"
-disableRSS = true
+disableKinds=["RSS"]
 
 [params]
   description = "Steak N Egger, a family owned breakfast, lunch, and dinner restaurant and eatery focused on energetic atmosphere and engaging service."

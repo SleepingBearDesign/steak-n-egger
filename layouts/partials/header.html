@@ -5,10 +5,6 @@
     <title>{{ .Title | singularize }} -- {{ .Site.Title }}</title>
     {{ partial "meta.html" . }}
 
-    {{ if .RSSlink }}
-    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
     <!-- Bootstrap and Style Sheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
