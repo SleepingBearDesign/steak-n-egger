@@ -2,7 +2,7 @@ baseurl = "http://steakneggermuskegon.com/"
 languageCode = "en-us"
 title = "Steak 'N Egger"
 googleanalytics = ""
-copyright = "© 2016 Steak N Egger. All Rights Reserved"
+copyright = "© 2020 Steak N Egger. All Rights Reserved"
 disableKinds=["RSS"]
 
 [params]
