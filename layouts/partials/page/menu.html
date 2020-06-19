@@ -129,23 +129,12 @@
   </div>
 </div>
 <div class="container menuContainer col-md-8 col-md-offset-2">
-  <h2 class="menuTitle">Sandwiches</h2> <hr />
+  <h2 class="menuTitle">Sandwiches &amp; Wraps</h2> <hr />
 <div class="row col-lg-12 text-center">
-  <p>served with potato chips substitute French fries $2.00, sweet potato fries $3.00, or onion rings $4.00</p>
+  <p>served with potato chips substitute French fries $2.00, sweet potato fries $3.00, or onion rings $4.50<br>all sandwiches available as a wrap</p>
 </div>
   <div class="row col-lg-12">
     {{ range $.Site.Data.menu.lunchdinner.sandwiches }}
-      {{ partial "menu-item.html" . }}
-    {{ end }}
-  </div>
-</div>
-<div class="container menuContainer col-md-8 col-md-offset-2">
-  <h2 class="menuTitle">Deli Style Sandwiches &amp; Wraps</h2> <hr />
-<div class="row col-lg-12 text-center">
-  <p>served with potato chips substitute French fries $2.00, sweet potato fries $3.00, or onion rings $4.00<br>all sandwiches available as a wrap</p>
-</div>
-  <div class="row col-lg-12">
-    {{ range $.Site.Data.menu.lunchdinner.delisandwiches }}
       {{ partial "menu-item.html" . }}
     {{ end }}
   </div>
