@@ -57,7 +57,7 @@
   <div class="container menuContainer col-md-8 col-md-offset-2">
     <h2 class="menuTitle">Eggers</h2> <hr />
     <div class="row col-lg-12 text-center">
-      <p>served with your choice of wheat, white, sourdough, raisin, rye, Texas, or English muffin, &amp; hash browns or American fries</p>
+      <p>served with your choice of wheat, white, sourdough, raisin, rye, Texas, or English muffin, &amp; hash browns or American fries<br>* Excludes Hash and Eggs</p>
     </div>
     <div class="row col-lg-12">
       {{ range $.Site.Data.menu.breakfast.eggers }}
@@ -69,6 +69,17 @@
     <h2 class="menuTitle">Breakfast Extras</h2> <hr />
     <div class="row col-lg-12">
       {{ range $.Site.Data.menu.breakfast.breakfastextras }}
+        {{ partial "menu-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="container menuContainer col-md-8 col-md-offset-2">
+    <h2 class="menuTitle">Kids</h2> <hr />
+    <div class="row col-lg-12 text-center">
+      <p>All meals $3.95 with soda, milk, or juice included<br>12 and under only please</p>
+    </div>
+    <div class="row col-lg-12">
+      {{ range $.Site.Data.menu.breakfast.kids }}
         {{ partial "menu-item.html" . }}
       {{ end }}
     </div>
@@ -129,9 +140,9 @@
   </div>
 </div>
 <div class="container menuContainer col-md-8 col-md-offset-2">
-  <h2 class="menuTitle">Sandwiches</h2> <hr />
+  <h2 class="menuTitle">Sandwiches &amp; Wraps</h2> <hr />
 <div class="row col-lg-12 text-center">
-  <p>served with potato chips substitute French fries $2.00, sweet potato fries $3.00, or onion rings $4.00</p>
+  <p>served with potato chips substitute French fries $2.00, sweet potato fries $3.00, or onion rings $4.50<br>all sandwiches available as a wrap</p>
 </div>
   <div class="row col-lg-12">
     {{ range $.Site.Data.menu.lunchdinner.sandwiches }}
@@ -140,20 +151,9 @@
   </div>
 </div>
 <div class="container menuContainer col-md-8 col-md-offset-2">
-  <h2 class="menuTitle">Deli Style Sandwiches &amp; Wraps</h2> <hr />
-<div class="row col-lg-12 text-center">
-  <p>served with potato chips substitute French fries $2.00, sweet potato fries $3.00, or onion rings $4.00<br>all sandwiches available as a wrap</p>
-</div>
-  <div class="row col-lg-12">
-    {{ range $.Site.Data.menu.lunchdinner.delisandwiches }}
-      {{ partial "menu-item.html" . }}
-    {{ end }}
-  </div>
-</div>
-<div class="container menuContainer col-md-8 col-md-offset-2">
   <h2 class="menuTitle">Burgers</h2> <hr />
 <div class="row col-lg-12 text-center">
-  <p>burgers are 1/3 lb. and served with fries and pickles substitute sweet potato fries for $1.00 or onion rings $2.00</p>
+  <p>burgers are 1/3 lb. and served with fries and pickles substitute sweet potato fries for $1.00 or onion rings $2.50</p>
 </div>
   <div class="row col-lg-12">
     {{ range $.Site.Data.menu.lunchdinner.burgers }}
@@ -189,9 +189,31 @@
   </div>
 </div>
 <div class="container menuContainer col-md-8 col-md-offset-2">
+  <h2 class="menuTitle">Beverages</h2> <hr />
+  <div class="row col-lg-12 text-center">
+    <p>*free refills on coffee, tea, and soft drinks in house only</p>
+  </div>
+  <div class="row col-lg-12">
+    {{ range $.Site.Data.menu.lunchdinner.beverages }}
+      {{ partial "menu-item.html" . }}
+    {{ end }}
+  </div>
+</div>
+<div class="container menuContainer col-md-8 col-md-offset-2">
   <h2 class="menuTitle">Sweet Spot</h2> <hr />
   <div class="row col-lg-12">
     {{ range $.Site.Data.menu.lunchdinner.sweetspot }}
+      {{ partial "menu-item.html" . }}
+    {{ end }}
+  </div>
+</div>
+<div class="container menuContainer col-md-8 col-md-offset-2">
+  <h2 class="menuTitle">Kids</h2> <hr />
+  <div class="row col-lg-12 text-center">
+    <p>All meals $3.95 with soda, milk, or juice include also served with fries, fruit or apple sauce<br>12 and under only please</p>
+  </div>
+  <div class="row col-lg-12">
+    {{ range $.Site.Data.menu.lunchdinner.kids }}
       {{ partial "menu-item.html" . }}
     {{ end }}
   </div>
