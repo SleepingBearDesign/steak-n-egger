@@ -17,11 +17,13 @@
         {{ if .IsHome }}
         <li><a href="#home" class="smoothScroll">Home</a></li>
         <li><a href="#about" class="smoothScroll">About</a></li>
+        <li><a href="https://www.toasttab.com/steak-n-egger-1535-holton-rd/v3">Order Online</a></li>
         <li><a href="menu">Menu</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
         {{ else }}
         <li><a href="{{ .Site.BaseURL }}">Home</a></li>
         <li><a href="{{ .Site.BaseURL }}#about">About</a></li>
+        <li><a href="https://www.toasttab.com/steak-n-egger-1535-holton-rd/v3">Order Online</a></li>
         <li><a href="{{ .Site.BaseURL }}menu">Menu</a></li>
         <li><a href="{{ .Site.BaseURL }}#contact">Contact</a></li>
         {{ end }}
